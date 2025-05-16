@@ -4,12 +4,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LSPD - Home</title>
     <meta name="description" content="LSPD - Domov">
-    <link rel="icon" type="image/x-icon" href="\LSPD_files/LSPD.webp">
-    <link rel="stylesheet" href="\LSPD_files/global.css">
+    <link rel="icon" type="image/x-icon" href="LSPD_files/LSPD.webp">
+    <link rel="stylesheet" href="LSPD_files/global.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="\LSPD_files/style.css" type="text/css">
-    <link rel="stylesheet" href="\LSPD_files/font-awesome.min.css">
+    <link rel="stylesheet" href="LSPD_files/style.css" type="text/css">
+    <link rel="stylesheet" href="LSPD_files/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/f83e61cd6c.js" crossorigin="anonymous"></script>
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FQZJFYMSVF"></script>
@@ -24,7 +24,7 @@
 <header id="header" style="border-bottom: 0;color:#fff;;transition: all 0.3s;">
 <div class="nav">
     <a href="index.html" style="text-decoration:none" id="Logo">
-        <img id="logoImg2" src="\LSPD_files/LSPD.webp" style="height: 55px;width: auto;" alt="LSPD">
+        <img id="logoImg2" src="LSPD_files/LSPD.webp" style="height: 55px;width: auto;" alt="LSPD">
         <h3 style="margin: 0;margin-left: 10px;color: #FFF;">Los Santos Police Department</h3>
     </a>
     <div id="bigMenu" style="color: rgb(255, 255, 255);">

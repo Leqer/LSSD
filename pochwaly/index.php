@@ -4,12 +4,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LSPD - Home</title>
     <meta name="description" content="LSPD - Domov">
-    <link rel="icon" type="image/x-icon" href="..\LSPD_files/LSPD.webp">
-    <link rel="stylesheet" href="..\LSPD_files/global.css">
+    <link rel="icon" type="image/x-icon" href="LSPD_files/LSPD.webp">
+    <link rel="stylesheet" href="LSPD_files/global.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="..\LSPD_files/style.css" type="text/css">
-    <link rel="stylesheet" href="..\LSPD_files/font-awesome.min.css">
+    <link rel="stylesheet" href="LSPD_files/style.css" type="text/css">
+    <link rel="stylesheet" href="LSPD_files/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/f83e61cd6c.js" crossorigin="anonymous"></script>
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FQZJFYMSVF"></script>
@@ -24,18 +24,18 @@
 <header id="header" style="border-bottom: 0;color:#fff;;transition: all 0.3s;">
 <div class="nav">
     <a href="http://doktor.stronacosinus.j.pl/lspd" style="text-decoration:none" id="Logo">
-        <img id="logoImg2" src="..\LSPD_files/LSPD.webp" style="height: 55px;width: auto;" alt="LSPD">
+        <img id="logoImg2" src="LSPD_files/LSPD.webp" style="height: 55px;width: auto;" alt="LSPD">
         <h3 style="margin: 0;margin-left: 10px;color: #FFF;">Los Santos Police Department</h3>
     </a>
     <div id="bigMenu" style="color: rgb(255, 255, 255);">
     <a href="nabor/" class="menuBtn menuBtnA" style="color: rgb(255, 255, 255);">Nabór</a>
-                <a href="..\kontakt/" class="menuBtn menuBtnA" style="color: rgb(255, 255, 255);">Kontakt</a>
-                <a href="..\skargi/" class="menuBtn menuBtnA" style="color: rgb(255, 255, 255);">Skargi</a>
-                <a href="..\pochwaly/" class="menuBtn menuBtnA" style="color: rgb(255, 255, 255);">Pochwaly</a>
+                <a href="kontakt/" class="menuBtn menuBtnA" style="color: rgb(255, 255, 255);">Kontakt</a>
+                <a href="skargi/" class="menuBtn menuBtnA" style="color: rgb(255, 255, 255);">Skargi</a>
+                <a href="pochwaly/" class="menuBtn menuBtnA" style="color: rgb(255, 255, 255);">Pochwaly</a>
             </div>
             <div id="Menu" style="cursor: pointer; color: rgb(255, 255, 255);"><i class="fa-solid fa-bars"></i></div>
             <div style="color: rgb(255, 255, 255); cursor: pointer;" id="logInHref">
-                <a href="..\login.php" style="color: rgb(255, 255, 255);"><i class="fa-solid fa-user"></i></a>
+                <a href="login.php" style="color: rgb(255, 255, 255);"><i class="fa-solid fa-user"></i></a>
             </div>
         <div id="MenuWrapper" class style="width: 100%; right: auto;">
             <a href="index.html">Główna</a>
@@ -114,7 +114,7 @@
             <h2 style="color: #fff;text-align: left;margin-bottom: 15px;" data-aos="fade-up" class="aos-init aos-animate">Pochwały</span></h2>
             <p data-aos="fade-up" data-aos-delay="150" style="color: #fff;text-align: left;" class="aos-init aos-animate">Wyróżnienia wydawane przez Departament Policji Los Santos (LSPD) są ważnym narzędziem doceniania i nagradzania pozytywnych wyników i zachowań funkcjonariuszy. Wyróżnienia te odgrywają kluczową rolę w zwiększaniu morale zespołu, motywacji i rozwoju zawodowego. Jednocześnie pomagają wzmocnić zaufanie społeczne do policji oraz promują pozytywne środowisko pracy i relacje wewnątrz organizacji. Wyróżnienia inspirują także innych członków do osiągnięcia doskonałości w służbie i zaangażowaniu społeczności.</p>
         </div>
-        <div data-aos="fade-up" data-aos-delay="200" style="height: 280px !important; margin-bottom: 120px;"><img src="..\LSPD_files/LSPD.webp" alt="LSPD"></div>
+        <div data-aos="fade-up" data-aos-delay="200" style="height: 280px !important; margin-bottom: 120px;"><img src="LSPD_files/LSPD.webp" alt="LSPD"></div>
     </div>
 </section>
     <section id="secondSection2">
@@ -131,7 +131,7 @@
                     <h4 style="text-align: center;color: #fff;font-style: italic;font-size: 20px;">Pomóż nam ulepszyć miasto, jesteśmy tu dla Ciebie!</h4>
                 </div>
                 <div style="flex-direction: row;column-gap: 15px;">
-                    <img id="iaimg" src="..\LSPD_files/ia.png" style="width: 60%;border-radius: 14px;" alt="">
+                    <img id="iaimg" src="LSPD_files/ia.png" style="width: 60%;border-radius: 14px;" alt="">
                 </div>
             </div>
             </div>
@@ -359,7 +359,7 @@
 <footer id="basicFooter" style="margin-top:2em">
     <div style="display:flex;width:100%;justify-content:center">
         <div style="display:flex;width:100%;justify-content:space-between;padding:15px;border-top:2px solid #d5dae2;max-width:1400px">
-            <h4 style="display: inline-flex;"><img src="..\LSPD_files/nlmt.png" style="height: 25px; margin-right: 10px;">Taste RP </h4>
+            <h4 style="display: inline-flex;"><img src="LSPD_files/nlmt.png" style="height: 25px; margin-right: 10px;">Taste RP </h4>
             <h4>Daniel Doktor  © 2024</h4>
         </div>
     </div>
