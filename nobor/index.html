@@ -1,0 +1,379 @@
+
+<!DOCTYPE html>
+<html lang="sk"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LSPD - Nabór</title>
+    <meta name="description" content="LSPD - Nábor">
+    <link rel="icon" type="image/x-icon" href="..\LSPD_files/LSPD.webp">
+    <link rel="stylesheet" href="..\LSPD_files/global.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="..\LSPD_files/style.css" type="text/css">
+    <script src="https://kit.fontawesome.com/f83e61cd6c.js" crossorigin="anonymous"></script>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FQZJFYMSVF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FQZJFYMSVF');
+</script>
+<body data-aos-easing="ease" data-aos-duration="600" data-aos-delay="0" data-new-gr-c-s-check-loaded="14.1121.0" data-gr-ext-installed="">
+<header id="headernabor">
+        <div class="nav">
+            <a href="http://doktor.stronacosinus.j.pl/lspd" style="text-decoration:none" id="Logo">
+                <img id="logoImg2" src="..\LSPD_files/LSPD.webp" style="height: 55px;width: auto;" alt="LSPD">
+                <h3 style="margin: 0;margin-left: 10px;color: #FFF;">Los Santos Police Department</h3>
+            </a>
+            <div id="bigMenu" style="color: rgb(255, 255, 255);">
+                <a href="..\nabor/" class="menuBtn menuBtnA" style="color: rgb(255, 255, 255);">Nabór</a>
+                <a href="..\kontakt/" class="menuBtn menuBtnA" style="color: rgb(255, 255, 255);">Kontakt</a>
+                <a href="..\skargi/" class="menuBtn menuBtnA" style="color: rgb(255, 255, 255);">Skargi</a>
+                <a href="..\pochwaly/" class="menuBtn menuBtnA" style="color: rgb(255, 255, 255);">Pochwaly</a>
+        </div>
+        <div id="Menu" style="cursor: pointer; color: rgb(255, 255, 255);"><i class="fa-solid fa-bars"></i></div>
+            <div style="color: rgb(255, 255, 255); cursor: pointer;" id="logInHref">
+                <a href="..\login.php" style="color: rgb(255, 255, 255);"><i class="fa-solid fa-user"></i></a>
+            </div>
+        <div id="MenuWrapper" class style="width: 100%; right: auto;">
+    
+            <a href="index.html">Domov</a>
+            <a href="nabor.html">Nábor</a>
+            <a href="kontakt.html">Kontakt</a>
+            <a href="pochwaly.html">Pochvaly</a>
+            <a href="sad.html">Stížnosti</a>
+        
+            <div id="menuWrapperExpand" style="display: none;">
+                <div id="menuWrapperExpandBack">
+                    <i class='fa-solid fa-x'></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script>
+       
+    $('#menuWrapperExpand').hide();
+    $('.menuWrapperExp').hide();
+
+    var farbaMenu = null;
+
+    $("#Menu").css("cursor", "pointer");
+    $("#logInHref").css("cursor", "pointer");
+
+    $(document).ready(function(){
+        $("#Menu").click(function () {
+            if ($(window).width() >= 900) {
+                $("#MenuWrapper").css("width", "400px");
+                $("#MenuWrapper").css("right", "0");
+            } else {
+                $("#MenuWrapper").css("width", "100%");
+                $("#MenuWrapper").css("right", "auto");
+            }
+            toggleMenu();
+        });
+        $('.bigMenuShowMore').click(function(){
+            var idOfExapnd = $(this).attr('data');
+            $('.menuWrapperExp').hide();
+            $('#menuWrapperExpand').show();
+            $('#'+idOfExapnd).fadeIn(200);
+        });
+        $('#menuWrapperExpandBack').click(function(){
+            $('#menuWrapperExpand').hide();
+            $('.menuWrapperExp').hide();
+        });
+    });
+    function toggleMenu() {
+        $("#MenuWrapper").toggleClass("open");
+        if($("#MenuWrapper").hasClass("open")){
+            $("#Menu")('<i class="fa-solid fa-x"></i>');
+            farbaMenu = $("#Menu").css('color');
+            $("#Menu").css('color','#000');
+            $('#blurMenu').show();
+        }
+        else{
+            $("#Menu")('<i class="fa-solid fa-bars"></i>');
+            $("#Menu").css('color',farbaMenu);
+            $('#blurMenu').hide();
+        }
+    }
+     </script>
+     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          var header = document.getElementById('headernabor');
+    
+          window.addEventListener('scroll', function() {
+            var scrollPosition = window.scrollY;
+    
+            if (scrollPosition > 50) {
+              headernabor.style.backgroundColor = '#005b96';
+            } else {
+              headernabor.style.backgroundColor = 'transparent';
+            }
+          });
+        });
+      </script>
+<section id="mainSectionnabor" style="margin-bottom: 30px;">
+    <div class="mainSectionWrapp">
+        <div class="mainSectDiv">
+            <h2 style="color: #fff; text-align: left; margin-bottom: 15px;" data-aos="fade-up" class="aos-init aos-animate">Rekrutacja<br> Do naszych szeregów</h2>
+<p data-aos="fade-up" data-aos-delay="150" style="color: #fff; text-align: left;" class="aos-init aos-animate">Akademia LSPD poszukuje kandydatów o wysokiej moralnej integralności i profesjonalnych umiejętnościach do służby publicznej. Kandydaci są oceniani pod kątem sprawności fizycznej, profilu psychologicznego i doświadczenia, aby zapewnić, że przyszli członkowie LSPD będą skutecznie wykonywać swoje obowiązki zgodnie z prawem i z szacunkiem dla obywateli.</p>
+<a href=""><button style="background-color: transparent; color: #fff; border: solid 2px #fff; width: fit-content;">Aplikuj jeszcze dziś</button></a>
+
+        <script>
+            function scrollWin() {
+              window.scrollBy(0, 1330);
+            }
+            </script>
+</div>
+</section>
+<section id="secondSection2">
+    <div id="svg-container" style="margin-bottom: 175px;">
+        
+        <h2 style="text-align: center;color: #000000; padding: 5px;border-radius: 25px; font-size: 45px; margin-top: -20px;">Akademie LSPD</h2>
+    </div>
+    <div class="wrapp1">
+        <div class="wrapp2">
+            <div>
+                <h3 class="headerwrapp2">Wymagania</h3>
+                <p class="textwrapp2">• Wiek 21+<br> • Niekaralność <br> • Posiadanie prawa jazdy typu B <br> • Sprawność fizyczna i psychiczna <br> • Co najmniej wykształcenie średnie <br> • Poczytalność <br> • Obywatelstwo amerykańskie</p>
+            </div>
+            <div class="divfoto1">
+                <img class="foto1"src="..\LSPD_files/pozadavkyy.png" alt="LSPD">
+            </div>
+        </div>
+        <div class="wrapp2">
+            <div>
+                <h3 class="headerwrapp2">Oferujemy</h3>
+                <p class="textwrapp2">• Możliwość służenia interesowi publicznemu<br> • Ubezpieczenie zdrowotne<br> • Broń służbowa<br> • Premia<br> • Stale rosnące wynagrodzenie zależne od stopnia<br> • Świetny zespół<br> • Stabilne zatrudnienie</p>
+            </div>
+            <div class="divfoto3">
+                <img src="..\LSPD_files/resizw.png" class="foto2" alt="LSPD">
+            </div>
+        </div>
+        <div class="wrapp2">
+            <div>
+                <h3 class="headerwrapp2">Dostępne wydziały</h3>
+                <p class="textwrapp2">• S.W.A.T. - Special Weapons And Tactics</p>
+                <p style="text-align: left;color: #575757; font-size: 16px; padding-left: 35px;">↑ Jednostka szybkiego rozmieszczenia, która zneutralizuje każde większe zagrożenie<br></p>
+                <p class="textwrapp2">• A.S.D. - Air Support Division</p>
+                <p style="text-align: left;color: #575757; font-size: 16px; padding-left: 35px;">↑ Pion zajmujący się działalnością gangów i ich funkcjonowaniem, zapewniający działalność gangów<br></p>
+                <p class="textwrapp2">• D.B. - Detective Bureau</p>
+                <p style="text-align: left;color: #575757; font-size: 16px; padding-left: 35px;">↑ Wydział zajmujący się śledztwami w sprawie morderstw, grup zorganizowanych i porwań<br></p>
+            </div>
+            <div class="divfoto2">
+                <img src="..\LSPD_files/divize.png" class="foto1" alt="LSPD">
+            </div>
+        </div>
+    </div>
+    <!-- <div class="iframe-container">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdRaIrMZ2oErpRDVOg7GhEwdij4bazH2QPPZVtRvW8JJQeA-Q/viewform?embedded=true"
+                width="640" height="699" frameborder="0" marginheight="0" marginwidth="0">
+            Ładuję…
+        </iframe>
+    </div>     -->
+</section>
+<script>
+    function Scrollform() {
+  var x = document.getElementById("scrollbutton2");
+  var y = document.getElementById("firstpage");
+  var z = document.getElementById("secondpage");
+  var a = document.getElementById("scrollbutton22");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    x.style.width = "100%";
+  } else {
+    x.style.display = "none";
+    y.style.display = "none";
+    z.style.display = "block";
+    a.style.display = "block";
+  }  
+}
+function Scrollform2() {
+  var x = document.getElementById("scrollbutton3");
+  var y = document.getElementById("secondpage");
+  var z = document.getElementById("thirdpage");
+  var a = document.getElementById("scrollbutton32");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    x.style.width = "100%";
+  } else {
+    x.style.display = "none";
+    y.style.display = "none";
+    z.style.display = "block";
+    a.style.display = "block";
+  }  
+}
+function Secondscrollform(){
+    var a = document.getElementById("scrollbutton22");
+    var b = document.getElementById("scrollbutton2");
+    var z = document.getElementById("secondpage");
+    var y = document.getElementById("firstpage");
+    if (a.style.display === "none") {
+    a.style.display = "block";
+    a.style.width = "100%";
+  } else {
+    a.style.display = "none";
+    z.style.display = "none";
+    y.style.display = "block";
+    b.style.display = "block";
+  }
+}
+function Thirdscrollform(){
+    var a = document.getElementById("scrollbutton32");
+    var b = document.getElementById("scrollbutton3");
+    var z = document.getElementById("thirdpage");
+    var y = document.getElementById("secondpage");
+    if (a.style.display === "none") {
+    a.style.display = "block";
+    a.style.width = "100%";
+  } else {
+    a.style.display = "none";
+    z.style.display = "none";
+    y.style.display = "block";
+    b.style.display = "block";
+  }
+}
+</script>
+        <style>
+
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Pełna wysokość widoku */
+    width: 100vw; /* Pełna szerokość widoku */
+}
+
+iframe {
+    border: none;
+    max-width: 100%; /* Zmniejsza iframe, jeśli ekran jest mniejszy */
+    max-height: 100vh; /* Zmniejsza iframe, jeśli ekran jest mniejszy */
+}
+
+
+/*---------------------------------secondSection---------------------------------*/
+#secondSection{
+                padding: 0px 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            /* Three columns side by side */
+            .secondSectionWrapp{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                padding: 15px;
+                max-width: 1590px;
+                position: relative;
+                display: flex;
+                flex-wrap: wrap;
+                padding: 8px;
+                column-gap: 16px;
+                row-gap: 16px;
+            }
+            
+            @media only screen and (max-width: 1400px) {
+                .secondSectionWrapp{
+                    max-width: 1490px;
+                }
+            }
+            @media only screen and (max-width: 770px) {
+                #secondSection{
+                    padding: 0px 8px;
+                }
+            }
+            @media only screen and (max-width: 650px) {
+                .trenersWrapp{
+                    height: 380px;
+                }
+                .trenersImg{
+                    height: 380px;
+                    min-height: 380px;
+                }
+                .trenersNameTag {
+                    top: 215px;
+                }
+            }
+            @media only screen and (max-width: 480px) {
+                #secondSection{
+                    padding: 0px 0px;
+                }
+                #header{
+                    display: flex !important;
+                }
+                .mainSectDiv{
+                    margin-top: 50px;
+                }
+            }
+        </style>
+    </section>   
+    <style>
+    #BlogWrapper{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        padding: 60px 30px;
+        flex-direction:column;
+    }
+    .scroll-wrapper{
+        width: 100%;
+        max-width: 1400px;
+        display: flex;
+        column-gap: 25px;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        padding: 0px 15px;
+    }
+    .scroll-wrapper::-webkit-scrollbar {
+        display: none;
+    }
+    .topicDiv{
+        min-width: 320px;
+        scroll-snap-align: center;
+    }
+    @media only screen and (max-width: 480px) {
+        #BlogWrapper{
+            padding:60px 0px;
+        }
+        
+    }
+</style>
+<footer id="basicFooter" style="margin-top:2em">
+    <div style="display:flex;width:100%;justify-content:center">
+        <div style="display:flex;width:100%;justify-content:space-between;padding:15px;border-top:2px solid #d5dae2;max-width:1400px">
+            <h4 style="display: inline-flex;"><img src="..\LSPD_files/nlmt.png" style="height: 25px; margin-right: 10px;">Taste RP </h4>
+            <h4>Daniel Doktor  © 2024</h4>
+        </div>
+    </div>
+</footer>
+    <script>
+    $('.footerMobileExpand').hide();
+    $(document).ready(function(){
+        $('.footerMobileWrapper').click(function(){
+            $(this).next().slideToggle(100);
+            $(this).find('i').toggleClass('rotated');
+            if ($(this).find('i').hasClass('rotated')) {
+                $(this).find('i').css('transform', 'rotate(45deg)');
+            } else {
+                $(this).find('i').css('transform', 'rotate(0deg)');
+            }
+        })
+    });
+    function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+</html>

@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="sk"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LSPD - Skargi</title>
+    <meta name="description" content="LSPD - Domov">
+    <link rel="icon" type="image/x-icon" href="..
+    
+    
+    LSPD_files/LSPD.webp">
+    <link rel="stylesheet" href="..\LSPD_files/global.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="..\LSPD_files/style.css" type="text/css">
+    <link rel="stylesheet" href="..\LSPD_files/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/f83e61cd6c.js" crossorigin="anonymous"></script>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FQZJFYMSVF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FQZJFYMSVF');
+</script>
+<body data-aos-easing="ease" data-aos-duration="600" data-aos-delay="0" data-new-gr-c-s-check-loaded="14.1121.0" data-gr-ext-installed="">
+<header id="header" style="border-bottom: 0;color:#fff;;transition: all 0.3s;">
+        <div class="nav">
+            <a href="http://doktor.stronacosinus.j.pl/lspd" style="text-decoration:none" id="Logo">
+                <img id="logoImg2" src="..\LSPD_files/LSPD.webp" style="height: 55px;width: auto;" alt="LSPD">
+                <h3 style="margin: 0;margin-left: 10px;color: #FFF;">Los Santos Police Department</h3>
+            </a>
+            <div id="bigMenu" style="color: rgb(255, 255, 255);">
+                <a href="..\nabor/" class="menuBtn menuBtnA" style="color: rgb(255, 255, 255);">Nabór</a>
+                <a href="..\kontakt/" class="menuBtn menuBtnA" style="color: rgb(255, 255, 255);">Kontakt</a>
+                <a href="..\skargi/" class="menuBtn menuBtnA" style="color: rgb(255, 255, 255);">Skargi</a>
+                <a href="..\pochwaly/" class="menuBtn menuBtnA" style="color: rgb(255, 255, 255);">Pochwaly</a>
+            </div>
+            <div id="Menu" style="cursor: pointer; color: rgb(255, 255, 255);"><i class="fa-solid fa-bars"></i></div>
+            <div style="color: rgb(255, 255, 255); cursor: pointer;" id="logInHref">
+                <a href="..\login.php" style="color: rgb(255, 255, 255);"><i class="fa-solid fa-user"></i></a>
+            </div>
+        <div id="MenuWrapper" class style="width: 100%; right: auto;">
+            <a href="index.html">Główna</a>
+            <a href="nabor.html">Nabór</a>
+            <a href="kontakt.html">Kontakt</a>
+            <a href="pochwaly.html">Pochwały</a>
+            <a href="sad.html">Skargi</a>
+        
+            <div id="menuWrapperExpand" style="display: none;">
+                <div id="menuWrapperExpandBack">
+                    <i class='fa-solid fa-x'></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script>    
+    $('#menuWrapperExpand').hide();
+    $('.menuWrapperExp').hide();
+
+    var farbaMenu = null;
+
+    $("#Menu").css("cursor", "pointer");
+    $("#logInHref").css("cursor", "pointer");
+
+    $(document).ready(function(){
+        $("#Menu").click(function () {
+            if ($(window).width() >= 900) {
+                $("#MenuWrapper").css("width", "400px");
+                $("#MenuWrapper").css("right", "0");
+            } else {
+                $("#MenuWrapper").css("width", "100%");
+                $("#MenuWrapper").css("right", "auto");
+            }
+            toggleMenu();
+        });
+        $('.bigMenuShowMore').click(function(){
+            var idOfExapnd = $(this).attr('data');
+            $('.menuWrapperExp').hide();
+            $('#menuWrapperExpand').show();
+            $('#'+idOfExapnd).fadeIn(200);
+        });
+        $('#menuWrapperExpandBack').click(function(){
+            $('#menuWrapperExpand').hide();
+            $('.menuWrapperExp').hide();
+        });
+    });
+    function toggleMenu() {
+        $("#MenuWrapper").toggleClass("open");
+        if($("#MenuWrapper").hasClass("open")){
+            $("#Menu")("<i class='fa-solid fa-x'></i>");
+            farbaMenu = $("#Menu").css('color');
+            $("#Menu").css('color','#000');
+            $('#blurMenu').show();
+        }
+        else{
+            $("#Menu")('<i class="fa-solid fa-bars"></i>');
+            $("#Menu").css('color',farbaMenu);
+            $('#blurMenu').hide();
+        }
+    }     
+    </script>
+<section id="mainSection">
+    <div class="mainSectionWrapp">
+        <style>
+            .typed-cursor{
+                color: #fff !important;
+            }
+        </style>
+        <div class="mainSectDiv">
+            <h2 style="color: #fff;text-align: left;margin-bottom: 15px;" data-aos="fade-up" class="aos-init aos-animate">Skargi</span></h2>
+            <p data-aos="fade-up" data-aos-delay="150" style="color: #fff;text-align: left;" class="aos-init aos-animate">Skargi składane w Departamencie Policji Los Santos (LSPD) stanowią ważny mechanizm zapewniający rozliczalność i przejrzystość pracy policji. Za ich pośrednictwem obywatele mogą wyrazić swoje obawy lub niezadowolenie z zachowania członków LSPD. Reklamacje mogą skutkować wszczęciem wewnętrznego dochodzenia, które pomoże działowi zidentyfikować potencjalne problemy i poprawić jakość świadczonych usług. W ten sposób skargi przyczyniają się do zapewnienia uczciwości, profesjonalizmu i zaufania publicznego do pracy LSPD.</p>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="200" style="height: 280px !important; margin-bottom: 120px;"><img src="..\LSPD_files/LSPD.webp" alt="LSPD"></div>
+    </div>
+</section>
+    <section id="secondSection2">
+        <div id="svg-container">
+            <svg width="100%" height="200px" viewBox="0 0 100 100" preserveAspectRatio="none" style="background-color: #6497b1;fill:#fff;transform: rotateX(180deg);">
+               <polygon points="0 100,150 0,303 -1,0 0" class="svg-polygon"></polygon>
+            </svg>
+        </div>
+        <div class="secondSectionWrapp31">
+            <div id="iawrapp"class="secondSectionWrapp3" style="background-color: #6497b1;">
+                <div>
+                    <h3 style="color:#fff;">Dział Rozpatrywania Reklamacji<br>Internal Affairs</h3>
+                    <p style="margin-bottom: 10px;color: #fff;font-size: 20px;">• Tutaj możesz zgłosić funkcjonariuszowi policji niewłaściwe zachowanie.<br> • Odwołaj się od mandatu.<br> • Złóż wniosek o odszkodowanie.</p>
+                    <h4 style="text-align: center;color: #fff;font-style: italic;font-size: 20px;">Pomóż nam ulepszyć miasto, jesteśmy tu dla Ciebie!</h4>
+                </div>
+                <div style="flex-direction: row;column-gap: 15px;">
+                    <img id="iaimg" src="..\LSPD_files/ia.png" style="width: 60%;border-radius: 14px;" alt="">
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    <div class="form">
+        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSePrzEDytUW33J4ZQSe382eKnguEIbA4q0kbGxWP4Vore9vQg/formResponse" target="_self" method="POST" class="form-support">
+            <div id="firstpage">
+                <h3>Skarga LSPD</h3>
+                    <p style="color: #fff">Wypełniając ten formularz, wyrażasz zgodę na warunki:<br>
+                        Policja LSPD złoży skargę na funkcjonariusza Departamentu Policji Los Santos.<br>
+                        Wszelkie fabrykacje i fałszywe oskarżenia są karalne.<br>
+                        Niewłaściwe wykorzystanie skargi jest przestępstwem.<br>
+                        Dlatego oświadczam, że w tej sekcji będę mówił wyłącznie prawdę i nie będę szkodził żadnemu Funkcjonariuszowi ani nie zszarganie imienia Funkcjonariusza LSPD w tej sekcji.</p>
+                    <button style="display: block;"id="scrollbutton2" style="align-items: center; width: 100%;"onclick="Scrollform()">Kontynuować</i></button>
+            </div>
+            <div id="secondpage" style="display: none;">
+                <div class="form-group">
+                    <label style="color: #fff;" for="customerId">Twoje Imię i nazwisko *</label>
+                    <textarea class="form-control" name="entry.1862529104" id="answer" rows="1" placeholder="" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label style="color: #fff;" for="customerId">Data uroidzenia? *</label>
+                    <input class="form-control" type="date"name="entry.971453140" id="answer" style="display: block;" required></input>
+                </div>
+                <div class="form-group">
+                    <label style="color: #fff;" for="customerId">Numer identyfikacyjny lub imię i nazwisko funkcjonariusza, przeciwko któremu składasz skargę *</label>
+                    <textarea class="form-control" name="entry.934139325" id="answer" rows="1" placeholder="" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label style="color: #fff;" for="customerId">Przedmiot skargi (np. niewłaściwe zachowanie/napaść) *</label>
+                    <textarea class="form-control" name="entry.1298902887" id="answer" rows="1" placeholder="" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label style="color: #fff;" for="customerId">Opis reklamacji *</label>
+                    <textarea class="form-control" name="entry.1974841503" id="answer" rows="3" placeholder="" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label style="color: #fff;" for="customerId">Dowód *</label>
+                    <textarea class="form-control" name="entry.907775286" id="answer" rows="3" placeholder="" required></textarea>
+                </div>
+                <div style="display: flex;">
+                <button style="display: block;"id="scrollbutton22" onclick="Secondscrollform()">Z powrotem</i></button>
+                <button class="btn btn-lg btn-primary btn-block"id="cbtn" type="submit">Potwierdzać</button>
+            </div>
+            </div>
+            </div>
+        </div>
+          </form>
+        </div>
+    </div>
+    <script>
+        function Scrollform() {
+      var x = document.getElementById("scrollbutton2");
+      var y = document.getElementById("firstpage");
+      var z = document.getElementById("secondpage");
+      var a = document.getElementById("scrollbutton22");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+        x.style.width = "100%";
+      } else {
+        x.style.display = "none";
+        y.style.display = "none";
+        z.style.display = "block";
+        a.style.display = "block";
+      }  
+    }
+    function Scrollform2() {
+      var x = document.getElementById("scrollbutton3");
+      var y = document.getElementById("secondpage");
+      var z = document.getElementById("thirdpage");
+      var a = document.getElementById("scrollbutton32");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+        x.style.width = "100%";
+      } else {
+        x.style.display = "none";
+        y.style.display = "none";
+        z.style.display = "block";
+        a.style.display = "block";
+      }  
+    }
+    function Secondscrollform(){
+        var a = document.getElementById("scrollbutton22");
+        var b = document.getElementById("scrollbutton2");
+        var z = document.getElementById("secondpage");
+        var y = document.getElementById("firstpage");
+        if (a.style.display === "none") {
+        a.style.display = "block";
+        a.style.width = "100%";
+      } else {
+        a.style.display = "none";
+        z.style.display = "none";
+        y.style.display = "block";
+        b.style.display = "block";
+      }
+    }
+    function Thirdscrollform(){
+        var a = document.getElementById("scrollbutton32");
+        var b = document.getElementById("scrollbutton3");
+        var z = document.getElementById("thirdpage");
+        var y = document.getElementById("secondpage");
+        if (a.style.display === "none") {
+        a.style.display = "block";
+        a.style.width = "100%";
+      } else {
+        a.style.display = "none";
+        z.style.display = "none";
+        y.style.display = "block";
+        b.style.display = "block";
+      }
+    }
+    </script>
+        <style>
+.form-support {
+  width: 100%;
+  max-width: 530px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-support .checkbox {
+  font-weight: 400;
+}
+.form-support .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-support .form-control:focus {
+  z-index: 2;
+}
+.form-support input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-support input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.column {
+  float: none;
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  border-radius: 15px;
+  margin: 40px;
+  justify-content: center;
+}
+.row{
+    border-radius: 15px;
+    background-color: #C8AE7D;
+    justify-content: center;
+    margin: 20px;
+    display: inline-block;
+    display: flex;
+}
+.meno {
+    display: flex;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+
+
+/* Add some shadows to create a card effect */
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+  border-radius: 15px;
+  justify-content: center;
+  display: block;
+  
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: flex;
+}
+
+.title {
+  color: #000;
+  padding: 10px;
+  font-size: 20px;
+}
+.popis {
+    color: #fff
+}
+
+
+/*---------------------------------secondSection---------------------------------*/
+#secondSection{
+                padding: 0px 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            /* Three columns side by side */
+            .secondSectionWrapp{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                padding: 15px;
+                max-width: 1590px;
+                position: relative;
+                display: flex;
+                flex-wrap: wrap;
+                padding: 8px;
+                column-gap: 16px;
+                row-gap: 16px;
+            }
+            
+            @media only screen and (max-width: 1400px) {
+                .secondSectionWrapp{
+                    max-width: 1490px;
+                }
+            }
+            @media only screen and (max-width: 770px) {
+                #secondSection{
+                    padding: 0px 8px;
+                }
+            }
+            @media only screen and (max-width: 650px) {
+                .trenersWrapp{
+                    height: 380px;
+                }
+                .trenersImg{
+                    height: 380px;
+                    min-height: 380px;
+                }
+                .trenersNameTag {
+                    top: 215px;
+                }
+            }
+            @media only screen and (max-width: 480px) {
+                #secondSection{
+                    padding: 0px 0px;
+                }
+            }
+        </style>
+    </section>   
+    <style>
+    #BlogWrapper{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        padding: 60px 30px;
+        flex-direction:column;
+    }
+    .scroll-wrapper{
+        width: 100%;
+        max-width: 1400px;
+        display: flex;
+        column-gap: 25px;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        padding: 0px 15px;
+    }
+    .scroll-wrapper::-webkit-scrollbar {
+        display: none;
+    }
+    .topicDiv{
+        min-width: 320px;
+        scroll-snap-align: center;
+    }
+    @media only screen and (max-width: 480px) {
+        #BlogWrapper{
+            padding:60px 0px;
+        }
+        
+    }
+</style>
+<footer id="basicFooter" style="margin-top:2em">
+    <div style="display:flex;width:100%;justify-content:center">
+        <div style="display:flex;width:100%;justify-content:space-between;padding:15px;border-top:2px solid #d5dae2;max-width:1400px">
+            <h4 style="display: inline-flex;"><img src="..\LSPD_files/nlmt.png" style="height: 25px; margin-right: 10px;">Taste RP </h4>
+            <h4>Daniel Doktor  © 2024</h4>
+        </div>
+    </div>
+</footer>
+    <script>
+    $('.footerMobileExpand').hide();
+    $(document).ready(function(){
+        $('.footerMobileWrapper').click(function(){
+            $(this).next().slideToggle(100);
+            $(this).find('i').toggleClass('rotated');
+            if ($(this).find('i').hasClass('rotated')) {
+                $(this).find('i').css('transform', 'rotate(45deg)');
+            } else {
+                $(this).find('i').css('transform', 'rotate(0deg)');
+            }
+        })
+    });
+    function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+</html>

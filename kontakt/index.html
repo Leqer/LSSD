@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="sk"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LSPD - Home</title>
+    <meta name="description" content="LSPD - Domov">
+    <link rel="icon" type="image/x-icon" href="..\LSPD_files/LSPD.webp">
+    <link rel="stylesheet" href="..\LSPD_files/global.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="..\LSPD_files/style.css" type="text/css">
+    <link rel="stylesheet" href="..\LSPD_files/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/f83e61cd6c.js" crossorigin="anonymous"></script>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FQZJFYMSVF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FQZJFYMSVF');
+</script>
+<body data-aos-easing="ease" data-aos-duration="600" data-aos-delay="0" data-new-gr-c-s-check-loaded="14.1121.0" data-gr-ext-installed="">
+<header id="header" style="border-bottom: 0;color:#fff;;transition: all 0.3s;">
+        <div class="nav">
+            <a href="http://doktor.stronacosinus.j.pl/lspd" style="text-decoration:none" id="Logo">
+                <img id="logoImg2" src="..\LSPD_files/LSPD.webp" style="height: 55px;width: auto;" alt="LSPD">
+                <h3 style="margin: 0;margin-left: 10px;color: #FFF;">Los Santos Police Department</h3>
+            </a>
+            <div id="bigMenu" style="color: rgb(255, 255, 255);">
+                <a href="..\nabor/" class="menuBtn menuBtnA" style="color: rgb(255, 255, 255);">Nabór</a>
+                <a href="..\kontakt/" class="menuBtn menuBtnA" style="color: rgb(255, 255, 255);">Kontakt</a>
+                <a href="..\skargi/" class="menuBtn menuBtnA" style="color: rgb(255, 255, 255);">Skargi</a>
+                <a href="..\pochwaly/" class="menuBtn menuBtnA" style="color: rgb(255, 255, 255);">Pochwaly</a>
+            </div>
+            <div id="Menu" style="cursor: pointer; color: rgb(255, 255, 255);"><i class="fa-solid fa-bars"></i></div>
+            <div style="color: rgb(255, 255, 255); cursor: pointer;" id="logInHref">
+                <a href="..\login.php" style="color: rgb(255, 255, 255);"><i class="fa-solid fa-user"></i></a>
+            </div>
+        <div id="MenuWrapper" class style="width: 100%; right: auto;">
+            <a href="http://doktor.stronacosinus.j.pl/lspd">Główna</a>
+            <a href="nabor.html">Nabór</a>
+            <a href="kontakt.html">Kontakt</a>
+            <a href="pochwaly.html">Pochwały</a>
+            <a href="sad.html">Skargi</a>
+        
+            <div id="menuWrapperExpand" style="display: none;">
+                <div id="menuWrapperExpandBack">
+                    <i class='fa-solid fa-x'></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script>
+       
+    $('#menuWrapperExpand').hide();
+    $('.menuWrapperExp').hide();
+
+    var farbaMenu = null;
+
+    $("#Menu").css("cursor", "pointer");
+    $("#logInHref").css("cursor", "pointer");
+
+    $(document).ready(function(){
+        $("#Menu").click(function () {
+            if ($(window).width() >= 900) {
+                $("#MenuWrapper").css("width", "400px");
+                $("#MenuWrapper").css("right", "0");
+            } else {
+                $("#MenuWrapper").css("width", "100%");
+                $("#MenuWrapper").css("right", "auto");
+            }
+            toggleMenu();
+        });
+        $('.bigMenuShowMore').click(function(){
+            var idOfExapnd = $(this).attr('data');
+            $('.menuWrapperExp').hide();
+            $('#menuWrapperExpand').show();
+            $('#'+idOfExapnd).fadeIn(200);
+        });
+        $('#menuWrapperExpandBack').click(function(){
+            $('#menuWrapperExpand').hide();
+            $('.menuWrapperExp').hide();
+        });
+    });
+    function toggleMenu() {
+        $("#MenuWrapper").toggleClass("open");
+        if($("#MenuWrapper").hasClass("open")){
+            $("#Menu")("<i class='fa-solid fa-x'></i>");
+            farbaMenu = $("#Menu").css('color');
+            $("#Menu").css('color','#000');
+            $('#blurMenu').show();
+        }
+        else{
+            $("#Menu")('<i class="fa-solid fa-bars"></i>');
+            $("#Menu").css('color',farbaMenu);
+            $('#blurMenu').hide();
+        }
+    }
+    
+
+        
+    </script>
+<section id="mainSection">
+    <div id="bckgrnd2">
+        <div class="mainSectionWrapp">
+            <div class="mainSectDiv">
+                <h2 style="color: #fff;text-align: left;margin-bottom: 15px;" data-aos="fade-up" class="aos-init aos-animate">Kontakt</span></h2>
+                <p data-aos="fade-up" data-aos-delay="150" style="color: #fff;text-align: left;" class="aos-init aos-animate">Kontakty z Departamentem Policji Los Santos są kluczowym elementem komunikacji publicznej i wsparcia. Sieć kontaktów LSPD obejmuje numery telefonów, adresy e-mail i adresy fizyczne poszczególnych wydziałów, umożliwiając obywatelom i zainteresowanym stronom łatwy dostęp do informacji, usług i wsparcia zapewnianego przez tę renomowaną instytucję.</p>
+            </div>
+            <script>
+            function scrollWin() {
+              window.scrollBy(0, 1500);
+            }
+            </script>
+        </div>
+    </div>
+</section>
+<section id="secondSection2">
+        <div id="svg-container" style="margin-bottom: 50px;">
+            <h2 style="text-align: center;color: #000000; padding: 5px;;margin: 50px 100px 0px 100px;border-radius: 25px; font-size: 55px;">Executive Staff LSPD</h2>
+        </div>
+</section>
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <img class="foto" src="..\LSPD_files/wip.png" alt="Assistant Chief Of Police - Brian Vargas" style="width:100%; border-radius: 15px;">
+            <div class="container">
+                <h2 style="font-size: 50px;">Brian Vargas</h2>
+                <h2 class="title">Assistant Chief of Police</h2>
+                <p style="font-style: italic;">Email: error404</p>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="card">
+            <img class="foto" src="..\LSPD_files/wip.png" alt="Chief Of Police - James McDonald" style="width:100%; border-radius: 15px;">
+            <div class="container">
+                <h2 style="font-size: 50px;">James McDonald</h2>
+                <h2 class="title">Chief Of Police</h2>
+                <p style="font-style: italic;">Email: error404</p>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="card">
+            <img class="foto" src="..\LSPD_files/wip.png" alt="Deputy Chief Of Police - William Ramos" style="width:100%; border-radius: 15px;">
+            <div class="container">
+                <h2 style="font-size: 50px;">William Ramos</h2>
+                <h2 class="title">Deputy Chief of Police</h2>
+                <p style="font-style: italic; margin-bottom: 15px;">Email: error404</p>
+            </div>
+        </div>
+    </div>
+</div>
+<h2 id="h2text">Tu znajduje się nasza stacja</h2>
+<div class="secondSectionWrapp31">
+    <div class="secondSectionWrapp3" style="background-color: #6497b1;width: 98%;">
+        <div>
+            <h3 style="color:#fff">Stacja LSPD Mission Row </h3>
+            <div class="column">
+                <div class="card">
+                  <img id="foto" src="..\LSPD_files/wip.png" alt="Captain - Moritz Renner" style="width:70%; border-radius: 15px;margin-left: 16%;">
+                  <div class="container">
+                      <h2 style="font-size: 50px;">Moritz Renner</h2>
+                    <h2 class="title">Captain</h2>
+                    <p style="font-style: italic;">Email: moritzrenner@lspd.gov.sa</p>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div style="flex-direction: row;column-gap: 15px;">
+            <img src="..\LSPD_files/lspdhq.png" style="width: 100%;border-radius: 14px;" alt="LSPD">
+        </div>
+    </div>
+    </div>
+</div>
+<style>
+.column {
+  float: none;
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  border-radius: 15px;
+  margin: 40px;
+  justify-content: center;
+}
+.row{
+    border-radius: 15px;
+    background-color: #6497b1;
+    justify-content: center;
+    margin: 20px;
+    display: inline-block;
+    display: flex;
+}
+.meno {
+    display: flex;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+
+
+/* Add some shadows to create a card effect */
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+  border-radius: 15px;
+  justify-content: center;
+  display: block;
+  
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: flex;
+}
+
+.title {
+  color: #000;
+  padding: 10px;
+  font-size: 20px;
+}
+.popis {
+    color: #fff
+}
+
+
+/*---------------------------------secondSection---------------------------------*/
+#secondSection{
+                padding: 0px 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            /* Three columns side by side */
+            .secondSectionWrapp{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                padding: 15px;
+                max-width: 1590px;
+                position: relative;
+                display: flex;
+                flex-wrap: wrap;
+                padding: 8px;
+                column-gap: 16px;
+                row-gap: 16px;
+            }
+            
+            @media only screen and (max-width: 1400px) {
+                .secondSectionWrapp{
+                    max-width: 1490px;
+                }
+            }
+            @media only screen and (max-width: 770px) {
+                #secondSection{
+                    padding: 0px 8px;
+                }
+            }
+            @media only screen and (max-width: 650px) {
+                .trenersWrapp{
+                    height: 380px;
+                }
+                .trenersImg{
+                    height: 380px;
+                    min-height: 380px;
+                }
+                .trenersNameTag {
+                    top: 215px;
+                }
+            }
+            @media only screen and (max-width: 480px) {
+                #secondSection{
+                    padding: 0px 0px;
+                }
+            }
+        </style>
+    </section>   
+    <style>
+    #BlogWrapper{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        padding: 60px 30px;
+        flex-direction:column;
+    }
+    .scroll-wrapper{
+        width: 100%;
+        max-width: 1400px;
+        display: flex;
+        column-gap: 25px;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        padding: 0px 15px;
+    }
+    .scroll-wrapper::-webkit-scrollbar {
+        display: none;
+    }
+    .topicDiv{
+        min-width: 320px;
+        scroll-snap-align: center;
+    }
+    @media only screen and (max-width: 480px) {
+        #BlogWrapper{
+            padding:60px 0px;
+        }
+        
+    }
+</style>
+<footer id="basicFooter" style="margin-top:2em">
+    <div style="display:flex;width:100%;justify-content:center">
+        <div style="display:flex;width:100%;justify-content:space-between;padding:15px;border-top:2px solid #d5dae2;max-width:1400px">
+            <h4 style="display: inline-flex;"><img src="..\LSPD_files/nlmt.png" style="height: 25px; margin-right: 10px;">Taste RP </h4>
+            <h4>Daniel Doktor  © 2024</h4>
+        </div>
+    </div>
+</footer>
+    <script>
+    $('.footerMobileExpand').hide();
+    $(document).ready(function(){
+        $('.footerMobileWrapper').click(function(){
+            $(this).next().slideToggle(100);
+            $(this).find('i').toggleClass('rotated');
+            if ($(this).find('i').hasClass('rotated')) {
+                $(this).find('i').css('transform', 'rotate(45deg)');
+            } else {
+                $(this).find('i').css('transform', 'rotate(0deg)');
+            }
+        })
+    });
+    function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+</html>
